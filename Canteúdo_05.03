@@ -1,0 +1,39 @@
+Aula 05/03 - Professor Max
+Apredendo no padrão do SQL - SQL ANSI
+Aprendendo Dialeto no SQL - SQL Dialect
+
+W3Schools - tutoriais sobre as principais linguagens e tecnologias de hoje
+     |
+Nele é possível aprender mais sobre SQL e de mais linguagens
+
+MySQL Tutorial - ajuda a estuadar 
+
+Na biblioteca digital da Unicid tem livros relacionados a SQL
+Indicado - SQL - Structed Query Language, 6ª Edição - Luis Dantas
+
+GitHub - portifolio online dos programadores
+ --Github Tutorial--
+----------------------------------------------------------------------------------
+Hoje - Definir e Alterar Objeto - DDL
+
+Assim que criar um banco de dados ncuidado ao If Not Exists, pois ele vai criar a tabela, mas se tiver algum erro ele não irá mostrar.
+
+BANCO DE DADOS:
+
+SHOW DATABASES - comando que exibe o Databases
+USE ... - usa o Database ou Table criada
+SHOW TABLE - comand que exibe Table
+SELECT * FROM - comando que seleciona um dado especifico
+DROP DATABASE ... - comando que apaga o Database
+DROP TABLE ... - comando que deleta o Table
+CREATE DATABESE IF NOT EXISTS - comando que cria Database
+CHARACTER SET ... - comando que define o alfabeto que será usado
+CALLATE ... - codigo do alfabeto
+	- Utilizar latin1 - latin1_swedish_ci
+CREATE TABLE ... (...); - comando para criar tabela
+
+---------------------------------------------------------------------------
+- DDL (ALTER - ADD / MODIFY)
+ADD - comando para adicionar a alteração na tabela
+MODIFY - comando para modicar a alteração na tabela
+INSERT INTO ... VALUES(...); - comando que inservalores na tabela
