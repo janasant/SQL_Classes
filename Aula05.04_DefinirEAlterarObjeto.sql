@@ -26,3 +26,21 @@ CREATE TABLE tbAlunos (
     );
 
 DROP TABLE tbAlunos;
+
+------------------------ Alterar Tabela ----------------------------
+-- DDL 
+-- (ALTER - ADD / MODIFY)
+
+-- alterar a tabela 
+ALTER TABLE  tbAlunos
+	ADD sexo CHAR(1)
+    AFTER nome;
+    
+ALTER TABLE tbAlunos
+	MODIFY sexo CHAR(1) NOT NULL;
+
+------------------------ Insere Valores na Tabela ----------------------------------
+INSERT INTO tbAlunos VALUES (22187332, "Janaina Santos", "F", "janasantos2912@gmail.com", "2001-06-16"),
+			    (18733222, "Maria Luiza", "F", "magaluiza@gmail.com", "2000-09-22");
+
+SELECT*FROM  faculdade.tbAlunos;
