@@ -39,8 +39,18 @@ ALTER TABLE  tbAlunos
 ALTER TABLE tbAlunos
 	MODIFY sexo CHAR(1) NOT NULL;
 
------------------------- Insere Valores na Tabela ----------------------------------
+------------------------ Insere Valores na Tabela -----------------------------------------------------------
 INSERT INTO tbAlunos VALUES (22187332, "Janaina Santos", "F", "janasantos2912@gmail.com", "2001-06-16"),
 			    (18733222, "Maria Luiza", "F", "magaluiza@gmail.com", "2000-09-22");
 
 SELECT*FROM  faculdade.tbAlunos;
+
+----------------------------- Exercício --------------------------------------------------------------------
+1. Criar uma tabela CURSO (faculdade)
+
+CREATE TABLE cursos (
+	idCurso 	INT AUTO_INCREMENT PRIMARY KEY,
+    nomeCurso	VARCHAR(50) NOT NULL,
+    duracao		INT NOT NULL,
+    periodo		VARCHAR(30) NOT NULL
+    );
