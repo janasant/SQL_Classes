@@ -16,7 +16,7 @@ GitHub - portifolio online dos programadores
 ----------------------------------------------------------------------------------
 Hoje - Definir e Alterar Objeto - DDL
 
-Assim que criar um banco de dados ncuidado ao If Not Exists, pois ele vai criar a tabela, mas se tiver algum erro ele não irá mostrar.
+Assim que criar um banco de dados cuidado ao If Not Exists, pois ele vai criar a tabela, mas se tiver algum erro ele não irá mostrar.
 
 BANCO DE DADOS:
 
