@@ -50,7 +50,7 @@ SELECT*FROM  faculdade.tbAlunos;
 
 CREATE TABLE cursos (
 	idCurso 	INT AUTO_INCREMENT PRIMARY KEY,
-    nomeCurso	VARCHAR(50) NOT NULL,
+    nomeCurso		VARCHAR(50) NOT NULL,
     duracao		INT NOT NULL,
     periodo		VARCHAR(30) NOT NULL
     );
