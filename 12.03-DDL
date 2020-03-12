@@ -1,0 +1,69 @@
+SELECT * FROM faculdade.tbalunos;
+
+------------ Adicionando idCurso ----------
+ALTER TABLE  tbAlunos
+	ADD idCurso INT;
+
+---------------- Chave Estrangeira ------------------------
+ALTER TABLE tbalunos
+	ADD CONSTRAINT FK_idCurso
+    FOREIGN KEY (idCurso) REFERENCES curso(idCurso);
+ 
+ --------------- Dados da tabela Deletados ---------------
+ DELETE FROM tbalunos
+WHERE  rgm > 0;
+
+
+INSERT INTO curso (nome, duracao, periodo) VALUES ("Analise e Desenvolvimento de Sistema", 4, "Matutino"),
+												  ("Engenharia de Software", 10, "Matutino");
+						
+INSERT INTO tbAlunos VALUES (22187332, "Janaina Santos", "F", "janasantos2912@gmail.com", "2001-06-16", 21),
+							(18733222, "Maria Luiza", "F", "magaluiza@gmail.com", "2000-09-22", 21);
+
+SELECT*FROM  faculdade.tbAlunos;
+
+
+________________________________________________________________________________________________________________
+
+----------------- Criando Tabelas -----------------
+
+----- Database Criado ----------
+CREATE DATABASE IF NOT EXISTS empresa
+CHARACTER SET latin1
+COLLATE 'latin1_swedish_ci';
+    --------- OU ----------
+ CREATE DATABASE IF EXISTS empresa;
+ 
+ ------ pois já esta gravados na memória o caracter --------------
+ 
+USE empresa;
+
+CREATE TABLE customers (
+	customersNumber			INT AUTO_INCREMENT PRIMARY KEY,
+    customersNome			VARCHAR(50),
+    contactLastName			VARCHAR(30),
+    contactFirstName		VARCHAR(30),
+    phone 					VARCHAR(30),
+    addressLine1			VARCHAR(30),
+    addressLine2			VARCHAR(30),
+    city					VARCHAR(30),
+    state					VARCHAR(30),
+    postalCode				VARCHAR(30),
+    country					VARCHAR(30),
+    salesRepEmpolyeNumber	INT,
+    creditLimit				FLOAT
+    );  
+
+CREATE TABLE orders (
+	orderNumber		INT AUTO_INCREMENT PRIMARY KEY,
+    orderDate		DATE,
+    requiredDate	DATE,
+    shippedDate		DATE,
+    orderStatus		VARCHAR(50),
+    comments		VARCHAR(50),
+    customersNumber	INT,
+    FOREIGN KEY orders (customersNumber) REFERENCES customers (customersNumber)
+    );
+    
+    ------- ALTER FKs -------
+    --- ALTER TABLE order ADD CONSTRAINT FK_CustomersOrder ---
